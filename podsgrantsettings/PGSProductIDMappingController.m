@@ -17,7 +17,7 @@ NSString *_formatProductID(uint16_t product_id) {
 	case 8209:
 		RET_PID("Beats Studio Buds");
         case 8228:
-                RET_PID("AirPods Pro 2typec");
+		RET_PID("AirPods Pro 2typec");
 	default:
 		return [NSString stringWithFormat:NSSTR("%d"), product_id];
 	}
