@@ -21,7 +21,7 @@ unsigned int my_1002E1F9C(void *a1, void *a2, void *a3, void *a4, void *a5) {
 	}else if(*(uint32_t*)(a1+product_id_offset)==8214) {
 		*(uint32_t*)(a1+product_id_offset)=8209; // Beats Studio Buds
         }else if(*(uint32_t*)(a1+product_id_offset)==8228) { // 8228=AirPods Pro2typec.
-                *(uint32_t*)(a1+product_id_offset)=8206; // AirPods Pro.
+		*(uint32_t*)(a1+product_id_offset)=8206; // AirPods Pro.
 	}*/
 	uint16_t patched=PGS_patchProductId(settings, *(uint32_t*)(a1+product_id_offset));
 	if(patched) {
@@ -43,7 +43,7 @@ unsigned int abilityFunc(void *a1, unsigned int abilityID) {
 	}else if(*(uint32_t*)(a1+product_id_offset)==8214) {
 		*(uint32_t*)(a1+product_id_offset)=8209;
         }else if(*(uint32_t*)(a1+product_id_offset)==8228) { // 8228=AirPods Pro2typec.
-                *(uint32_t*)(a1+product_id_offset)=8206; // AirPods Pro.
+		*(uint32_t*)(a1+product_id_offset)=8206; // AirPods Pro.
 	}*/
 	uint16_t patched=PGS_patchProductId(settings, *(uint32_t*)(a1+product_id_offset));
 	if(patched) {
@@ -51,7 +51,7 @@ unsigned int abilityFunc(void *a1, unsigned int abilityID) {
 	}
 	//fprintf(log_file, "PRODID afterpatch: %d\n", *(uint32_t*)(a1+product_id_offset));
 	//fflush(log_file);
-	if(*(unsigned int*)(a1+product_id_offset)==0x200E) {
+	if(*(unsigned int*)(a1+product_id_offset)==8206) {
 		if(abilityID==12||abilityID==26) {
 			return 1;
 		}
