@@ -52,7 +52,9 @@ static const struct address_map_entry address_map[] = {
 // iOS 15.4 (Thanks @babyf2sh)
 // iOS 15.6 (Thanks @NotAnEvilScientist, #43)
 static const struct address_map_entry address_map[] = {
-	{15,6,924,0x100321ED0,0x10031F560,0},
+        {16,3,968,0x100390E3C,0x10038E328,0},
+        {15,6,924,0x100321ED0,0x10031F560,0}, 
+        {15,6,924,0x100321ED0,0x10031F560,0},
 	{15,4,924,0x100348DB4,0x1003462E0,0},
 	{15,3,908,0x1003362C8,0x1003337B8,0}, // Software volume changing is natively supported
 	{15,2,908,0x1003370A8,0x100334598,0x1001FD950},
